@@ -151,9 +151,7 @@ address {
    color: var(--accent-color);
 }
 
-/*.auth-nav .current {
-   color: var(--accent-color);
-}*/
+
 
 .auth-nav{
    display: flex;
@@ -190,8 +188,24 @@ address {
    fill: var(--primary-text-color);
    margin-right: 10px;
 }
+.site-nav .list {
+   position: relative;
 
+}
+.site-nav .current::after {
+   content: '';
+
+   display: inline-block;
+   position: absolute;
+   bottom: 0;
+   left: 0;
    
+   width: 48px;
+   height: 4px;
+   background-image: url(../images/hoverline.svg);
+}
+   
+
 /*  style hero*/
 
 .hero {
